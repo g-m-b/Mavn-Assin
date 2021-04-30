@@ -19,5 +19,11 @@ echo 'Project packaging stage'
 bat label: 'Project packaging', script: '''mvn package'''
 }
 }
+stage('Maven Install'){
+steps{
+echo 'Project Installing stage'
+bat label: 'Project packaging', script: '''mvn install'''
+}
+}
 }
 }
